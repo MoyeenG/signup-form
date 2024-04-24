@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/form_style.css">                                                                                                                                                             
+    </head>  
+
+    <body>
+        <form id="RegForm" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Registration Form</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr class="dataRows">
+                        <td><label for="name">Enter Name</label></td>
+                        <td><input id="name"></td>
+                    </tr>
+                
+                    <tr class="dataRows">
+                        <td><label for="password">Enter Password</label></td>
+                        <td><input id="password"></td>
+                    </tr>
+                
+                    <tr class="dataRows">
+                        <td><label for="address">Enter Address</label></td>
+                        <td><textarea id="address" form="RegForm"></textarea></td>
+                    </tr>
+
+                    <tr class="dataRows">
+                        <td><label for="select">Select Game</label></td>
+                        
+                        <td id="select">
+                            <input type="checkbox" id="option1">
+                            <label for="option1">Hockey</label>
+                            <br>
+                            
+                            <input type="checkbox" id="option2">
+                            <label for="option2">Football</label>
+                            <br>
+                            
+                            <input type="checkbox" id="option3" value="Badminton">
+                            <label for="option3">Badminton</label>
+                            <br>
+
+                            <input type="checkbox" id="option4" value="Cricket">
+                            <label for="option4">Cricket</label>
+                            <br>
+
+                            <input type="checkbox" id="option5" value="Volleyball">
+                            <label for="option5">Volleyball</label>
+                            <br>
+                        </td>
+                    </tr>                                
+
+                    <tr class="dataRows">
+                        <td><label for="gender">Gender</label></td>
+                        <td id="gender">
+                            <input type="radio" id="male" name="gender" checked>
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+
+                    <tr class="dataRows">
+                        <td>Select your age</td>
+                        <td>
+                            <select>
+                                <option>Select</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>More than 21</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="dataRows">
+                        <td>Select Photo</td>
+                        <td><input type="file"></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2" id="footer">
+                            <input type="button" id="clickMe" value="Click Me">
+                            <input type="Reset" id="reset">
+                            <input type="submit" id="submit" value="Submit Form">                        
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>
